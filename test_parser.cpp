@@ -17,3 +17,10 @@ TEST_CASE("Parser handles empty input", "[parser]") {
     REQUIRE(cmd.name == "");
     REQUIRE(cmd.args.empty());
 }
+
+TEST_CASE("Parser handles input with only spaces", "[parser]") {
+    Parser parser;
+    auto cmd = parser.parse("   ");
+    REQUIRE(cmd.name == "");
+    REQUIRE(cmd.args.empty());
+}

@@ -8,6 +8,9 @@ Command Parser::parse(const std::string& input) {
     std::string s;
 
     while (getline(ss, s, ' ')) {
+        if (s.empty()) {
+            continue;
+        }
         v.push_back(s);
     }
 
