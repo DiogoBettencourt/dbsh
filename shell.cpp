@@ -15,7 +15,6 @@ void Shell::run() {
         }
 
         Parser parser;
-
-        std::vector<std::string> command = parser.parse(input);
+        Command command = parser.parse(input);
     }
 }

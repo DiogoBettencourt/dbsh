@@ -1,0 +1,4 @@
+/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles/dbsh.dir
+/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles/test_parser.dir
+/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles/edit_cache.dir
+/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles/rebuild_cache.dir
