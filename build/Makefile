@@ -130,17 +130,41 @@ dbsh/fast:
 .PHONY : dbsh/fast
 
 #=============================================================================
-# Target rules for targets named test_parser
+# Target rules for targets named tests
 
 # Build rule for target.
-test_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parser
-.PHONY : test_parser
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-test_parser/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/build
-.PHONY : test_parser/fast
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+builtins.o: builtins.cpp.o
+.PHONY : builtins.o
+
+# target to build an object file
+builtins.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/builtins.cpp.o
+.PHONY : builtins.cpp.o
+
+builtins.i: builtins.cpp.i
+.PHONY : builtins.i
+
+# target to preprocess a source file
+builtins.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/builtins.cpp.i
+.PHONY : builtins.cpp.i
+
+builtins.s: builtins.cpp.s
+.PHONY : builtins.s
+
+# target to generate assembly for a file
+builtins.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/builtins.cpp.s
+.PHONY : builtins.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -172,7 +196,7 @@ parser.o: parser.cpp.o
 # target to build an object file
 parser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/parser.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/parser.cpp.o
 .PHONY : parser.cpp.o
 
 parser.i: parser.cpp.i
@@ -181,7 +205,7 @@ parser.i: parser.cpp.i
 # target to preprocess a source file
 parser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/parser.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/parser.cpp.i
 .PHONY : parser.cpp.i
 
 parser.s: parser.cpp.s
@@ -190,7 +214,7 @@ parser.s: parser.cpp.s
 # target to generate assembly for a file
 parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/parser.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/parser.cpp.s
 .PHONY : parser.cpp.s
 
 shell.o: shell.cpp.o
@@ -217,12 +241,36 @@ shell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/shell.cpp.s
 .PHONY : shell.cpp.s
 
+test_builtins.o: test_builtins.cpp.o
+.PHONY : test_builtins.o
+
+# target to build an object file
+test_builtins.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_builtins.cpp.o
+.PHONY : test_builtins.cpp.o
+
+test_builtins.i: test_builtins.cpp.i
+.PHONY : test_builtins.i
+
+# target to preprocess a source file
+test_builtins.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_builtins.cpp.i
+.PHONY : test_builtins.cpp.i
+
+test_builtins.s: test_builtins.cpp.s
+.PHONY : test_builtins.s
+
+# target to generate assembly for a file
+test_builtins.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_builtins.cpp.s
+.PHONY : test_builtins.cpp.s
+
 test_parser.o: test_parser.cpp.o
 .PHONY : test_parser.o
 
 # target to build an object file
 test_parser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/test_parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_parser.cpp.o
 .PHONY : test_parser.cpp.o
 
 test_parser.i: test_parser.cpp.i
@@ -230,7 +278,7 @@ test_parser.i: test_parser.cpp.i
 
 # target to preprocess a source file
 test_parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/test_parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_parser.cpp.i
 .PHONY : test_parser.cpp.i
 
 test_parser.s: test_parser.cpp.s
@@ -238,7 +286,7 @@ test_parser.s: test_parser.cpp.s
 
 # target to generate assembly for a file
 test_parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parser.dir/build.make CMakeFiles/test_parser.dir/test_parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_parser.cpp.s
 .PHONY : test_parser.cpp.s
 
 # Help Target
@@ -250,7 +298,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dbsh"
-	@echo "... test_parser"
+	@echo "... tests"
+	@echo "... builtins.o"
+	@echo "... builtins.i"
+	@echo "... builtins.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -260,6 +311,9 @@ help:
 	@echo "... shell.o"
 	@echo "... shell.i"
 	@echo "... shell.s"
+	@echo "... test_builtins.o"
+	@echo "... test_builtins.i"
+	@echo "... test_builtins.s"
 	@echo "... test_parser.o"
 	@echo "... test_parser.i"
 	@echo "... test_parser.s"
