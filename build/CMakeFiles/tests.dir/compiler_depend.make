@@ -225,6 +225,8 @@ CMakeFiles/tests.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -249,11 +251,13 @@ CMakeFiles/tests.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.
   /usr/include/bits/sigstksz.h \
   /usr/include/bits/sigthread.h \
   /usr/include/bits/ss_flags.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
@@ -280,6 +284,7 @@ CMakeFiles/tests.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.
   /usr/include/bits/types/sigval_t.h \
   /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
@@ -371,12 +376,14 @@ CMakeFiles/tests.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/locale.h \
   /usr/include/signal.h \
   /usr/include/stdc-predef.h \
@@ -902,6 +909,8 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
@@ -953,6 +962,8 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/bits/basic_string.tcc \
   /usr/include/c++/15.2.1/bits/char_traits.h \
   /usr/include/c++/15.2.1/bits/charconv.h \
+  /usr/include/c++/15.2.1/bits/chrono.h \
+  /usr/include/c++/15.2.1/bits/codecvt.h \
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
@@ -960,6 +971,7 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/fstream.tcc \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -979,6 +991,7 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/bits/ostream.h \
   /usr/include/c++/15.2.1/bits/ostream.tcc \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
+  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -1008,11 +1021,15 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/cassert \
   /usr/include/c++/15.2.1/cctype \
   /usr/include/c++/15.2.1/cerrno \
+  /usr/include/c++/15.2.1/chrono \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/concepts \
   /usr/include/c++/15.2.1/cstddef \
+  /usr/include/c++/15.2.1/cstdint \
   /usr/include/c++/15.2.1/cstdio \
   /usr/include/c++/15.2.1/cstdlib \
+  /usr/include/c++/15.2.1/cstring \
+  /usr/include/c++/15.2.1/ctime \
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/cwctype \
   /usr/include/c++/15.2.1/debug/assertions.h \
@@ -1023,14 +1040,16 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/fstream \
   /usr/include/c++/15.2.1/initializer_list \
   /usr/include/c++/15.2.1/ios \
   /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
+  /usr/include/c++/15.2.1/limits \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/ostream \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
+  /usr/include/c++/15.2.1/ratio \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/streambuf \
   /usr/include/c++/15.2.1/string \
@@ -1041,8 +1060,10 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/typeinfo \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -1051,6 +1072,51 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/catch2/benchmark/catch_clock.hpp \
+  /usr/include/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp \
+  /usr/include/catch2/catch_assertion_info.hpp \
+  /usr/include/catch2/catch_message.hpp \
+  /usr/include/catch2/catch_section_info.hpp \
+  /usr/include/catch2/catch_test_macros.hpp \
+  /usr/include/catch2/catch_timer.hpp \
+  /usr/include/catch2/catch_tostring.hpp \
+  /usr/include/catch2/catch_totals.hpp \
+  /usr/include/catch2/catch_user_config.hpp \
+  /usr/include/catch2/interfaces/catch_interfaces_capture.hpp \
+  /usr/include/catch2/interfaces/catch_interfaces_enum_values_registry.hpp \
+  /usr/include/catch2/interfaces/catch_interfaces_registry_hub.hpp \
+  /usr/include/catch2/interfaces/catch_interfaces_test_invoker.hpp \
+  /usr/include/catch2/internal/catch_assertion_handler.hpp \
+  /usr/include/catch2/internal/catch_compare_traits.hpp \
+  /usr/include/catch2/internal/catch_compiler_capabilities.hpp \
+  /usr/include/catch2/internal/catch_config_counter.hpp \
+  /usr/include/catch2/internal/catch_config_prefix_messages.hpp \
+  /usr/include/catch2/internal/catch_config_static_analysis_support.hpp \
+  /usr/include/catch2/internal/catch_config_wchar.hpp \
+  /usr/include/catch2/internal/catch_context.hpp \
+  /usr/include/catch2/internal/catch_decomposer.hpp \
+  /usr/include/catch2/internal/catch_deprecation_macro.hpp \
+  /usr/include/catch2/internal/catch_lifetimebound.hpp \
+  /usr/include/catch2/internal/catch_logical_traits.hpp \
+  /usr/include/catch2/internal/catch_message_info.hpp \
+  /usr/include/catch2/internal/catch_move_and_forward.hpp \
+  /usr/include/catch2/internal/catch_noncopyable.hpp \
+  /usr/include/catch2/internal/catch_platform.hpp \
+  /usr/include/catch2/internal/catch_preprocessor_internal_stringify.hpp \
+  /usr/include/catch2/internal/catch_preprocessor_remove_parens.hpp \
+  /usr/include/catch2/internal/catch_result_type.hpp \
+  /usr/include/catch2/internal/catch_reusable_string_stream.hpp \
+  /usr/include/catch2/internal/catch_section.hpp \
+  /usr/include/catch2/internal/catch_source_line_info.hpp \
+  /usr/include/catch2/internal/catch_stream_end_stop.hpp \
+  /usr/include/catch2/internal/catch_stringref.hpp \
+  /usr/include/catch2/internal/catch_test_failure_exception.hpp \
+  /usr/include/catch2/internal/catch_test_macro_impl.hpp \
+  /usr/include/catch2/internal/catch_test_registry.hpp \
+  /usr/include/catch2/internal/catch_unique_name.hpp \
+  /usr/include/catch2/internal/catch_unique_ptr.hpp \
+  /usr/include/catch2/internal/catch_unreachable.hpp \
+  /usr/include/catch2/internal/catch_void_type.hpp \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1067,8 +1133,11 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -1077,7 +1146,8 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
 CMakeFiles/tests.dir/test_parser.cpp.o: /home/diogo/Documents/GitHub/dbsh/test_parser.cpp \
   /home/diogo/Documents/GitHub/dbsh/parser.h \
@@ -1409,6 +1479,14 @@ CMakeFiles/tests.dir/builtins.cpp.o:
 
 /home/diogo/Documents/GitHub/dbsh/test_parser.cpp:
 
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/15.2.1/fstream:
+
+/usr/include/c++/15.2.1/bits/codecvt.h:
+
 /home/diogo/Documents/GitHub/dbsh/test_executor.cpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
@@ -1420,8 +1498,6 @@ CMakeFiles/tests.dir/builtins.cpp.o:
 /usr/include/catch2/internal/catch_unique_ptr.hpp:
 
 /usr/include/catch2/internal/catch_unique_name.hpp:
-
-/usr/include/catch2/internal/catch_test_macro_impl.hpp:
 
 /usr/include/catch2/internal/catch_test_failure_exception.hpp:
 
@@ -1471,6 +1547,12 @@ CMakeFiles/tests.dir/builtins.cpp.o:
 
 /usr/include/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp:
 
+/usr/include/c++/15.2.1/cstring:
+
+/usr/include/c++/15.2.1/cstdint:
+
+/usr/include/c++/15.2.1/cassert:
+
 /usr/include/c++/15.2.1/bits/stl_function.h:
 
 /usr/include/c++/15.2.1/bits/invoke.h:
@@ -1513,6 +1595,8 @@ CMakeFiles/tests.dir/parser.cpp.o:
 
 /usr/include/c++/15.2.1/cstdio:
 
+/usr/include/bits/stat.h:
+
 /usr/include/assert.h:
 
 /usr/include/c++/15.2.1/bits/exception_ptr.h:
@@ -1540,6 +1624,8 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
 /usr/include/c++/15.2.1/bits/memory_resource.h:
+
+/usr/include/c++/15.2.1/bits/fstream.tcc:
 
 /usr/include/time.h:
 
@@ -1576,6 +1662,10 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/15.2.1/bits/ios_base.h:
+
+/usr/include/c++/15.2.1/chrono:
+
+/usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/15.2.1/cctype:
 
@@ -1633,6 +1723,10 @@ CMakeFiles/tests.dir/parser.cpp.o:
 
 /usr/include/bits/errno.h:
 
+/usr/include/c++/15.2.1/ctime:
+
+/usr/include/bits/timex.h:
+
 /usr/include/bits/locale.h:
 
 /usr/include/c++/15.2.1/bits/basic_string.tcc:
@@ -1640,6 +1734,10 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/endianness.h:
+
+/usr/include/c++/15.2.1/bits/parse_numbers.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/catch2/internal/catch_stringref.hpp:
 
@@ -1660,6 +1758,8 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/fcntl.h:
 
 /usr/include/sys/wait.h:
 
@@ -1692,10 +1792,6 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/bits/types/idtype_t.h:
 
 /usr/include/bits/types/locale_t.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/15.2.1/bits/parse_numbers.h:
 
 /usr/include/c++/15.2.1/bits/allocator.h:
 
@@ -1765,6 +1861,8 @@ CMakeFiles/tests.dir/parser.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
+/usr/include/bits/struct_stat.h:
+
 /usr/include/c++/15.2.1/ios:
 
 /usr/include/bits/thread-shared-types.h:
@@ -1786,8 +1884,6 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/bits/types/__FILE.h:
 
 /usr/include/bits/types/__locale_t.h:
-
-/usr/include/c++/15.2.1/bits/sstream.tcc:
 
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
@@ -1875,6 +1971,10 @@ CMakeFiles/tests.dir/parser.cpp.o:
 
 /usr/include/c++/15.2.1/istream:
 
+/usr/include/c++/15.2.1/bits/sstream.tcc:
+
+/usr/include/bits/fcntl-linux.h:
+
 /usr/include/c++/15.2.1/debug/assertions.h:
 
 /usr/include/c++/15.2.1/new:
@@ -1957,6 +2057,10 @@ CMakeFiles/tests.dir/parser.cpp.o:
 
 /usr/include/bits/confname.h:
 
+/usr/include/catch2/internal/catch_test_macro_impl.hpp:
+
+/usr/include/bits/fcntl.h:
+
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
 /usr/include/bits/getopt_core.h:
@@ -2001,7 +2105,11 @@ CMakeFiles/tests.dir/parser.cpp.o:
 
 /usr/include/bits/types/sigval_t.h:
 
+/usr/include/bits/types/struct_iovec.h:
+
 /usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
 
@@ -2022,17 +2130,3 @@ CMakeFiles/tests.dir/parser.cpp.o:
 /usr/include/bits/stdint-least.h:
 
 /usr/include/c++/15.2.1/bits/chrono.h:
-
-/usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/15.2.1/chrono:
-
-/usr/include/c++/15.2.1/cassert:
-
-/usr/include/c++/15.2.1/cstdint:
-
-/usr/include/c++/15.2.1/cstring:
-
-/usr/include/bits/timex.h:
-
-/usr/include/c++/15.2.1/ctime:

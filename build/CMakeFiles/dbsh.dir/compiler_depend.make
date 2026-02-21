@@ -225,6 +225,8 @@ CMakeFiles/dbsh.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.c
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -249,11 +251,13 @@ CMakeFiles/dbsh.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.c
   /usr/include/bits/sigstksz.h \
   /usr/include/bits/sigthread.h \
   /usr/include/bits/ss_flags.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
@@ -280,6 +284,7 @@ CMakeFiles/dbsh.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.c
   /usr/include/bits/types/sigval_t.h \
   /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
@@ -371,12 +376,14 @@ CMakeFiles/dbsh.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.c
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/locale.h \
   /usr/include/signal.h \
   /usr/include/stdc-predef.h \
@@ -860,6 +867,12 @@ CMakeFiles/dbsh.dir/executor.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+
+/usr/lib/libm.so:
+
+/usr/lib/libgcc_s.so.1:
+
 /usr/include/c++/15.2.1/bits/stl_function.h:
 
 /usr/include/c++/15.2.1/bits/invoke.h:
@@ -900,7 +913,13 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/c++/15.2.1/cstdio:
 
+/usr/include/bits/stat.h:
+
 /usr/include/c++/15.2.1/bits/exception_ptr.h:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/pthreadtypes.h:
 
 /usr/include/c++/15.2.1/bits/exception.h:
 
@@ -1036,6 +1055,8 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
+/usr/include/fcntl.h:
+
 /usr/include/sys/wait.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
@@ -1096,6 +1117,10 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/c++/15.2.1/bits/locale_classes.tcc:
 
+/usr/lib/crtn.o:
+
+/usr/include/c++/15.2.1/bits/functional_hash.h:
+
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/select.h:
@@ -1124,6 +1149,8 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
+/usr/include/bits/struct_stat.h:
+
 /usr/include/c++/15.2.1/ios:
 
 /usr/include/bits/thread-shared-types.h:
@@ -1150,8 +1177,6 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/bits/types/__locale_t.h:
 
-/usr/include/c++/15.2.1/bits/sstream.tcc:
-
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
 /usr/include/bits/atomic_wide_counter.h:
@@ -1177,6 +1202,10 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 /usr/include/bits/typesizes.h:
 
 /usr/include/c++/15.2.1/bits/string_view.tcc:
+
+/usr/lib/libstdc++.so:
+
+/usr/include/locale.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
@@ -1210,11 +1239,19 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /home/diogo/Documents/GitHub/dbsh/executor.h:
 
+/usr/lib/libgcc_s.so:
+
+/usr/include/c++/15.2.1/cstddef:
+
 /usr/include/c++/15.2.1/cstdlib:
 
 /usr/include/c++/15.2.1/cwctype:
 
 /usr/include/c++/15.2.1/istream:
+
+/usr/include/c++/15.2.1/bits/sstream.tcc:
+
+/usr/include/bits/fcntl-linux.h:
 
 /usr/include/c++/15.2.1/debug/assertions.h:
 
@@ -1296,7 +1333,7 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/bits/confname.h:
 
-/usr/lib/libgcc_s.so.1:
+/usr/include/bits/fcntl.h:
 
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
@@ -1332,17 +1369,17 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/include/bits/sigstksz.h:
 
-/usr/include/c++/15.2.1/bits/functional_hash.h:
-
-/usr/lib/crtn.o:
-
 /usr/include/bits/sigthread.h:
 
 /usr/include/bits/types/sigevent_t.h:
 
 /usr/include/bits/types/sigval_t.h:
 
+/usr/include/bits/types/struct_iovec.h:
+
 /usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
 
@@ -1359,19 +1396,3 @@ CMakeFiles/dbsh.dir/builtins.cpp.o:
 /usr/include/c++/15.2.1/bits/nested_exception.h:
 
 /home/diogo/Documents/GitHub/dbsh/shell.cpp:
-
-/usr/lib/libm.so:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/lib/libc.so:
-
-/usr/include/c++/15.2.1/cstddef:
-
-/usr/lib/libgcc_s.so:
-
-/usr/include/locale.h:
-
-/usr/lib/libstdc++.so:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
