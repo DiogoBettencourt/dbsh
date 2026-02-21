@@ -81,11 +81,6 @@ int Executor::executePipeline(const std::vector<Command>& pipeline) {
     for (size_t i = 0; i < pipeline.size(); i++) {
         const Command& cmd = pipeline[i];
 
-        if (isBuiltin(cmd)) {
-            runBuiltin(cmd);
-            continue;
-        }
-
         pid_t pid = fork();
         if (pid < 0) {
             perror("fork failed");
@@ -126,6 +121,11 @@ int Executor::executePipeline(const std::vector<Command>& pipeline) {
                 close(fd);
             }
 
+            if (isBuiltin(cmd)) {
+                runBuiltin(cmd);
+                exit(0);
+            }
+
             std::vector<char*> args;
             args.push_back(const_cast<char*>(cmd.name.c_str()));
             for (auto &arg : cmd.args) {
@@ -145,9 +145,13 @@ int Executor::executePipeline(const std::vector<Command>& pipeline) {
         close(pipes[i][0]);
         close(pipes[i][1]);
     }
-
-    for (pid_t pid : pids) {
-        waitpid(pid, nullptr, 0);
+    
+    bool is_background = !pipeline.empty() && pipeline.back().background;
+    
+    if (!is_background) {
+        for (pid_t pid : pids) {
+            waitpid(pid, nullptr, 0);
+        }
     }
 
     return 0;
