@@ -18,6 +18,11 @@ Command Parser::parse(const std::string& input) {
         cmd.name = v[0];
         if (v.size() > 1)
             cmd.args = std::vector<std::string>(v.begin() + 1, v.end());
+        
+        if (!cmd.args.empty() && cmd.args.back() == "&") {
+            cmd.background = true;
+            cmd.args.pop_back();
+        }
     }
     return cmd;
 }

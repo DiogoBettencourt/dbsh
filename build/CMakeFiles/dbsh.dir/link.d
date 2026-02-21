@@ -5,6 +5,8 @@ dbsh: \
   CMakeFiles/dbsh.dir/main.cpp.o \
   CMakeFiles/dbsh.dir/parser.cpp.o \
   CMakeFiles/dbsh.dir/shell.cpp.o \
+  CMakeFiles/dbsh.dir/executor.cpp.o \
+  CMakeFiles/dbsh.dir/builtins.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -44,6 +46,10 @@ CMakeFiles/dbsh.dir/main.cpp.o:
 CMakeFiles/dbsh.dir/parser.cpp.o:
 
 CMakeFiles/dbsh.dir/shell.cpp.o:
+
+CMakeFiles/dbsh.dir/executor.cpp.o:
+
+CMakeFiles/dbsh.dir/builtins.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so:
 

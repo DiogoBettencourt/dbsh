@@ -1,4 +1,4 @@
-CMakeFiles/tests.dir/builtins.cpp.o: \
+CMakeFiles/dbsh.dir/builtins.cpp.o: \
  /home/diogo/Documents/GitHub/dbsh/builtins.cpp \
  /usr/include/stdc-predef.h /home/diogo/Documents/GitHub/dbsh/builtins.h \
  /usr/include/c++/15.2.1/vector \

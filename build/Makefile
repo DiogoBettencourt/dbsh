@@ -147,6 +147,7 @@ builtins.o: builtins.cpp.o
 
 # target to build an object file
 builtins.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/builtins.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/builtins.cpp.o
 .PHONY : builtins.cpp.o
 
@@ -155,6 +156,7 @@ builtins.i: builtins.cpp.i
 
 # target to preprocess a source file
 builtins.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/builtins.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/builtins.cpp.i
 .PHONY : builtins.cpp.i
 
@@ -163,8 +165,36 @@ builtins.s: builtins.cpp.s
 
 # target to generate assembly for a file
 builtins.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/builtins.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/builtins.cpp.s
 .PHONY : builtins.cpp.s
+
+executor.o: executor.cpp.o
+.PHONY : executor.o
+
+# target to build an object file
+executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/executor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/executor.cpp.o
+.PHONY : executor.cpp.o
+
+executor.i: executor.cpp.i
+.PHONY : executor.i
+
+# target to preprocess a source file
+executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/executor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/executor.cpp.i
+.PHONY : executor.cpp.i
+
+executor.s: executor.cpp.s
+.PHONY : executor.s
+
+# target to generate assembly for a file
+executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbsh.dir/build.make CMakeFiles/dbsh.dir/executor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/executor.cpp.s
+.PHONY : executor.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -265,6 +295,30 @@ test_builtins.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_builtins.cpp.s
 .PHONY : test_builtins.cpp.s
 
+test_executor.o: test_executor.cpp.o
+.PHONY : test_executor.o
+
+# target to build an object file
+test_executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_executor.cpp.o
+.PHONY : test_executor.cpp.o
+
+test_executor.i: test_executor.cpp.i
+.PHONY : test_executor.i
+
+# target to preprocess a source file
+test_executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_executor.cpp.i
+.PHONY : test_executor.cpp.i
+
+test_executor.s: test_executor.cpp.s
+.PHONY : test_executor.s
+
+# target to generate assembly for a file
+test_executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test_executor.cpp.s
+.PHONY : test_executor.cpp.s
+
 test_parser.o: test_parser.cpp.o
 .PHONY : test_parser.o
 
@@ -302,6 +356,9 @@ help:
 	@echo "... builtins.o"
 	@echo "... builtins.i"
 	@echo "... builtins.s"
+	@echo "... executor.o"
+	@echo "... executor.i"
+	@echo "... executor.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -314,6 +371,9 @@ help:
 	@echo "... test_builtins.o"
 	@echo "... test_builtins.i"
 	@echo "... test_builtins.s"
+	@echo "... test_executor.o"
+	@echo "... test_executor.i"
+	@echo "... test_executor.s"
 	@echo "... test_parser.o"
 	@echo "... test_parser.i"
 	@echo "... test_parser.s"

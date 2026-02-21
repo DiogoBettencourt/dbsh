@@ -100,10 +100,24 @@ CMakeFiles/tests.dir/test_builtins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test_builtins.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogo/Documents/GitHub/dbsh/test_builtins.cpp -o CMakeFiles/tests.dir/test_builtins.cpp.s
 
+CMakeFiles/tests.dir/test_executor.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test_executor.cpp
+CMakeFiles/tests.dir/test_executor.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/test_executor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/test_executor.cpp.o -MF CMakeFiles/tests.dir/test_executor.cpp.o.d -o CMakeFiles/tests.dir/test_executor.cpp.o -c /home/diogo/Documents/GitHub/dbsh/test_executor.cpp
+
+CMakeFiles/tests.dir/test_executor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/test_executor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogo/Documents/GitHub/dbsh/test_executor.cpp > CMakeFiles/tests.dir/test_executor.cpp.i
+
+CMakeFiles/tests.dir/test_executor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test_executor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogo/Documents/GitHub/dbsh/test_executor.cpp -o CMakeFiles/tests.dir/test_executor.cpp.s
+
 CMakeFiles/tests.dir/parser.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/parser.cpp.o: /home/diogo/Documents/GitHub/dbsh/parser.cpp
 CMakeFiles/tests.dir/parser.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/parser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/parser.cpp.o -MF CMakeFiles/tests.dir/parser.cpp.o.d -o CMakeFiles/tests.dir/parser.cpp.o -c /home/diogo/Documents/GitHub/dbsh/parser.cpp
 
 CMakeFiles/tests.dir/parser.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/tests.dir/parser.cpp.s: cmake_force
 CMakeFiles/tests.dir/builtins.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/builtins.cpp.o: /home/diogo/Documents/GitHub/dbsh/builtins.cpp
 CMakeFiles/tests.dir/builtins.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/builtins.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/builtins.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/builtins.cpp.o -MF CMakeFiles/tests.dir/builtins.cpp.o.d -o CMakeFiles/tests.dir/builtins.cpp.o -c /home/diogo/Documents/GitHub/dbsh/builtins.cpp
 
 CMakeFiles/tests.dir/builtins.cpp.i: cmake_force
@@ -128,26 +142,44 @@ CMakeFiles/tests.dir/builtins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/builtins.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogo/Documents/GitHub/dbsh/builtins.cpp -o CMakeFiles/tests.dir/builtins.cpp.s
 
+CMakeFiles/tests.dir/executor.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/executor.cpp
+CMakeFiles/tests.dir/executor.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tests.dir/executor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/executor.cpp.o -MF CMakeFiles/tests.dir/executor.cpp.o.d -o CMakeFiles/tests.dir/executor.cpp.o -c /home/diogo/Documents/GitHub/dbsh/executor.cpp
+
+CMakeFiles/tests.dir/executor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/executor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/diogo/Documents/GitHub/dbsh/executor.cpp > CMakeFiles/tests.dir/executor.cpp.i
+
+CMakeFiles/tests.dir/executor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/executor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/diogo/Documents/GitHub/dbsh/executor.cpp -o CMakeFiles/tests.dir/executor.cpp.s
+
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/test_parser.cpp.o" \
 "CMakeFiles/tests.dir/test_builtins.cpp.o" \
+"CMakeFiles/tests.dir/test_executor.cpp.o" \
 "CMakeFiles/tests.dir/parser.cpp.o" \
-"CMakeFiles/tests.dir/builtins.cpp.o"
+"CMakeFiles/tests.dir/builtins.cpp.o" \
+"CMakeFiles/tests.dir/executor.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
 tests: CMakeFiles/tests.dir/test_parser.cpp.o
 tests: CMakeFiles/tests.dir/test_builtins.cpp.o
+tests: CMakeFiles/tests.dir/test_executor.cpp.o
 tests: CMakeFiles/tests.dir/parser.cpp.o
 tests: CMakeFiles/tests.dir/builtins.cpp.o
+tests: CMakeFiles/tests.dir/executor.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: CMakeFiles/tests.dir/compiler_depend.ts
 tests: /usr/lib/libCatch2Main.a
 tests: /usr/lib/libCatch2.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/diogo/Documents/GitHub/dbsh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/diogo/Documents/GitHub/dbsh/builtins.cpp" "CMakeFiles/dbsh.dir/builtins.cpp.o" "gcc" "CMakeFiles/dbsh.dir/builtins.cpp.o.d"
+  "/home/diogo/Documents/GitHub/dbsh/executor.cpp" "CMakeFiles/dbsh.dir/executor.cpp.o" "gcc" "CMakeFiles/dbsh.dir/executor.cpp.o.d"
   "/home/diogo/Documents/GitHub/dbsh/main.cpp" "CMakeFiles/dbsh.dir/main.cpp.o" "gcc" "CMakeFiles/dbsh.dir/main.cpp.o.d"
   "/home/diogo/Documents/GitHub/dbsh/parser.cpp" "CMakeFiles/dbsh.dir/parser.cpp.o" "gcc" "CMakeFiles/dbsh.dir/parser.cpp.o.d"
   "/home/diogo/Documents/GitHub/dbsh/shell.cpp" "CMakeFiles/dbsh.dir/shell.cpp.o" "gcc" "CMakeFiles/dbsh.dir/shell.cpp.o.d"

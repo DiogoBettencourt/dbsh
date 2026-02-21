@@ -1,5 +1,5 @@
 #include "shell.h"
-#include "parser.h"
+#include "executor.h"
 #include <iostream>
 
 void Shell::run() {
@@ -15,6 +15,8 @@ void Shell::run() {
         }
 
         Parser parser;
-        Command command = parser.parse(input);
+        Command cmd = parser.parse(input);
+        Executor executor;
+        executor.execute(cmd);
     }
 }

@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dbsh.dir/link.d"
+  "CMakeFiles/dbsh.dir/builtins.cpp.o"
+  "CMakeFiles/dbsh.dir/builtins.cpp.o.d"
+  "CMakeFiles/dbsh.dir/executor.cpp.o"
+  "CMakeFiles/dbsh.dir/executor.cpp.o.d"
   "CMakeFiles/dbsh.dir/main.cpp.o"
   "CMakeFiles/dbsh.dir/main.cpp.o.d"
   "CMakeFiles/dbsh.dir/parser.cpp.o"

@@ -4,8 +4,10 @@ tests: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/tests.dir/test_parser.cpp.o \
   CMakeFiles/tests.dir/test_builtins.cpp.o \
+  CMakeFiles/tests.dir/test_executor.cpp.o \
   CMakeFiles/tests.dir/parser.cpp.o \
   CMakeFiles/tests.dir/builtins.cpp.o \
+  CMakeFiles/tests.dir/executor.cpp.o \
   /usr/lib/libCatch2Main.a \
   /usr/lib/libCatch2.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
@@ -46,9 +48,13 @@ CMakeFiles/tests.dir/test_parser.cpp.o:
 
 CMakeFiles/tests.dir/test_builtins.cpp.o:
 
+CMakeFiles/tests.dir/test_executor.cpp.o:
+
 CMakeFiles/tests.dir/parser.cpp.o:
 
 CMakeFiles/tests.dir/builtins.cpp.o:
+
+CMakeFiles/tests.dir/executor.cpp.o:
 
 /usr/lib/libCatch2Main.a:
 

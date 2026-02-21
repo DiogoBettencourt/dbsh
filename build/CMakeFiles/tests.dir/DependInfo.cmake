@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/diogo/Documents/GitHub/dbsh/builtins.cpp" "CMakeFiles/tests.dir/builtins.cpp.o" "gcc" "CMakeFiles/tests.dir/builtins.cpp.o.d"
+  "/home/diogo/Documents/GitHub/dbsh/executor.cpp" "CMakeFiles/tests.dir/executor.cpp.o" "gcc" "CMakeFiles/tests.dir/executor.cpp.o.d"
   "/home/diogo/Documents/GitHub/dbsh/parser.cpp" "CMakeFiles/tests.dir/parser.cpp.o" "gcc" "CMakeFiles/tests.dir/parser.cpp.o.d"
   "/home/diogo/Documents/GitHub/dbsh/test_builtins.cpp" "CMakeFiles/tests.dir/test_builtins.cpp.o" "gcc" "CMakeFiles/tests.dir/test_builtins.cpp.o.d"
+  "/home/diogo/Documents/GitHub/dbsh/test_executor.cpp" "CMakeFiles/tests.dir/test_executor.cpp.o" "gcc" "CMakeFiles/tests.dir/test_executor.cpp.o.d"
   "/home/diogo/Documents/GitHub/dbsh/test_parser.cpp" "CMakeFiles/tests.dir/test_parser.cpp.o" "gcc" "CMakeFiles/tests.dir/test_parser.cpp.o.d"
   "" "tests" "gcc" "CMakeFiles/tests.dir/link.d"
   )
