@@ -1,13 +1,22 @@
 #include "shell.h"
 #include "executor.h"
 #include <iostream>
+#include <unistd.h>
+#include <climits>
 
 void Shell::run() {
     bool end = false;
 
     while (!end) {
         std::string input;
-        std::cout << "dbsh> ";
+        
+        char cwd[PATH_MAX];
+        if (getcwd(cwd, sizeof(cwd)) != nullptr) {
+            std::cout << cwd << " $ ";
+        } else {
+            std::cout << "dbsh> ";
+        }
+        
         std::getline(std::cin, input);
         
         if (input.empty()) {

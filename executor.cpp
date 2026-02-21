@@ -6,11 +6,6 @@
 #include <fcntl.h>
 
 int Executor::execute(const Command& cmd) {
-    if (isBuiltin(cmd)) {
-        runBuiltin(cmd);
-        return 0;
-    }
-
     pid_t pid = fork();
     if (pid < 0) {
         perror("fork failed");
@@ -18,13 +13,7 @@ int Executor::execute(const Command& cmd) {
     }
 
     if (pid == 0) {
-        std::vector<char*> args;
-        args.push_back(const_cast<char*>(cmd.name.c_str()));
-        for (auto &arg : cmd.args) {
-            args.push_back(const_cast<char*>(arg.c_str()));
-        }
-        args.push_back(nullptr);
-
+        // Set up redirections first, before running builtin or external command
         if (!cmd.input_file.empty()) {
             int fd = open(cmd.input_file.c_str(), O_RDONLY);
             if (fd < 0) {
@@ -44,6 +33,20 @@ int Executor::execute(const Command& cmd) {
             dup2(fd, STDOUT_FILENO);
             close(fd);
         }
+
+        // Now check if it's a builtin and run it
+        if (isBuiltin(cmd)) {
+            runBuiltin(cmd);
+            exit(0);
+        }
+
+        // Otherwise, set up args and exec
+        std::vector<char*> args;
+        args.push_back(const_cast<char*>(cmd.name.c_str()));
+        for (auto &arg : cmd.args) {
+            args.push_back(const_cast<char*>(arg.c_str()));
+        }
+        args.push_back(nullptr);
 
         execvp(cmd.name.c_str(), args.data());
 

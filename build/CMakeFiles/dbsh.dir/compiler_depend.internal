@@ -19,15 +19,23 @@ CMakeFiles/dbsh.dir/builtins.cpp.o
  /usr/include/asm/types.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
+ /usr/include/bits/confname.h
  /usr/include/bits/cpu-set.h
  /usr/include/bits/endian.h
  /usr/include/bits/endianness.h
+ /usr/include/bits/environments.h
  /usr/include/bits/errno.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
+ /usr/include/bits/getopt_core.h
+ /usr/include/bits/getopt_posix.h
  /usr/include/bits/libc-header-start.h
+ /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/posix1_lim.h
+ /usr/include/bits/posix2_lim.h
+ /usr/include/bits/posix_opt.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
  /usr/include/bits/pthreadtypes.h
@@ -71,11 +79,14 @@ CMakeFiles/dbsh.dir/builtins.cpp.o
  /usr/include/bits/types/wint_t.h
  /usr/include/bits/typesizes.h
  /usr/include/bits/uintn-identity.h
+ /usr/include/bits/uio_lim.h
+ /usr/include/bits/unistd_ext.h
  /usr/include/bits/waitflags.h
  /usr/include/bits/waitstatus.h
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/bits/xopen_lim.h
  /usr/include/c++/15.2.1/backward/binders.h
  /usr/include/c++/15.2.1/bit
  /usr/include/c++/15.2.1/bits/alloc_traits.h
@@ -140,6 +151,7 @@ CMakeFiles/dbsh.dir/builtins.cpp.o
  /usr/include/c++/15.2.1/bits/version.h
  /usr/include/c++/15.2.1/cctype
  /usr/include/c++/15.2.1/cerrno
+ /usr/include/c++/15.2.1/climits
  /usr/include/c++/15.2.1/clocale
  /usr/include/c++/15.2.1/concepts
  /usr/include/c++/15.2.1/cstddef
@@ -190,7 +202,10 @@ CMakeFiles/dbsh.dir/builtins.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/limits.h
+ /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/limits.h
  /usr/include/linux/posix_types.h
  /usr/include/linux/sched/types.h
  /usr/include/linux/stddef.h
@@ -206,10 +221,13 @@ CMakeFiles/dbsh.dir/builtins.cpp.o
  /usr/include/sys/single_threaded.h
  /usr/include/sys/types.h
  /usr/include/time.h
+ /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
 CMakeFiles/dbsh.dir/executor.cpp.o
  /home/diogo/Documents/GitHub/dbsh/executor.cpp
@@ -635,15 +653,23 @@ CMakeFiles/dbsh.dir/shell.cpp.o
  /usr/include/asm/types.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
+ /usr/include/bits/confname.h
  /usr/include/bits/cpu-set.h
  /usr/include/bits/endian.h
  /usr/include/bits/endianness.h
+ /usr/include/bits/environments.h
  /usr/include/bits/errno.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
+ /usr/include/bits/getopt_core.h
+ /usr/include/bits/getopt_posix.h
  /usr/include/bits/libc-header-start.h
+ /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/posix1_lim.h
+ /usr/include/bits/posix2_lim.h
+ /usr/include/bits/posix_opt.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
  /usr/include/bits/pthreadtypes.h
@@ -687,11 +713,14 @@ CMakeFiles/dbsh.dir/shell.cpp.o
  /usr/include/bits/types/wint_t.h
  /usr/include/bits/typesizes.h
  /usr/include/bits/uintn-identity.h
+ /usr/include/bits/uio_lim.h
+ /usr/include/bits/unistd_ext.h
  /usr/include/bits/waitflags.h
  /usr/include/bits/waitstatus.h
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/bits/xopen_lim.h
  /usr/include/c++/15.2.1/backward/binders.h
  /usr/include/c++/15.2.1/bit
  /usr/include/c++/15.2.1/bits/alloc_traits.h
@@ -756,6 +785,7 @@ CMakeFiles/dbsh.dir/shell.cpp.o
  /usr/include/c++/15.2.1/bits/version.h
  /usr/include/c++/15.2.1/cctype
  /usr/include/c++/15.2.1/cerrno
+ /usr/include/c++/15.2.1/climits
  /usr/include/c++/15.2.1/clocale
  /usr/include/c++/15.2.1/concepts
  /usr/include/c++/15.2.1/cstddef
@@ -806,7 +836,10 @@ CMakeFiles/dbsh.dir/shell.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/limits.h
+ /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/limits.h
  /usr/include/linux/posix_types.h
  /usr/include/linux/sched/types.h
  /usr/include/linux/stddef.h
@@ -822,10 +855,13 @@ CMakeFiles/dbsh.dir/shell.cpp.o
  /usr/include/sys/single_threaded.h
  /usr/include/sys/types.h
  /usr/include/time.h
+ /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
 dbsh
  /usr/lib/Scrt1.o
