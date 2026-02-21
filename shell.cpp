@@ -10,13 +10,24 @@ void Shell::run() {
         std::cout << "dbsh> ";
         std::getline(std::cin, input);
         
+        if (input.empty()) {
+            continue;
+        }   
+        
         if (input == "exit") {
             end = true;
+            continue;
         }
 
         Parser parser;
-        Command cmd = parser.parse(input);
         Executor executor;
-        executor.execute(cmd);
+
+        if (input.find('|') != std::string::npos) {
+            std::vector<Command> pipeline = parser.parsePipeline(input);
+            executor.executePipeline(pipeline);
+        } else {
+            Command cmd = parser.parse(input);
+            executor.execute(cmd);
+        }
     }
 }

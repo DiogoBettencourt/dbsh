@@ -893,15 +893,20 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
   /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -947,6 +952,7 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/bits/types/wint_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
@@ -1124,6 +1130,7 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
@@ -1143,6 +1150,7 @@ CMakeFiles/tests.dir/test_executor.cpp.o: /home/diogo/Documents/GitHub/dbsh/test
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/types.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
