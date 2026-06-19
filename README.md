@@ -148,17 +148,17 @@ cd build
 Understanding the effort distribution across this project:
 
 | Component | Hours | Percentage | Description |
-|-----------|-------|-----------|-------------|
-| **Architecture & Design** | 1-2h | 7-9% | Planning, system design, component interaction |
-| **Parser Implementation** | 4-5h | 18-22% | Tokenization, syntax analysis, string handling |
-| **Executor Implementation** | 4-5h | 18-22% | Process management, I/O handling, signal handling |
-| **Built-in Commands** | 2-3h | 9-13% | Command implementations, argument processing |
-| **Shell REPL Loop** | 1-2h | 5-9% | Main loop, prompt management, user interaction |
-| **Unit Testing** | 3-4h | 13-18% | Test cases for all components, edge cases |
-| **Documentation & Cleanup** | 1-2h | 5-9% | README, comments, code organization |
-| **Build System (CMake)** | 1h | 4-5% | CMakeLists.txt, Catch2 integration |
-| **Debugging & Optimization** | 1-2h | 5-9% | Bug fixes, performance improvements |
-| **TOTAL** | **18-26h** | **100%** | Average: ~22 hours |
+| :--- | :--- | :--- | :--- |
+| **Architecture & Design** | 2h | 7.7% | Planning, system design, component interaction |
+| **Parser Implementation** | 5h | 19.2% | Tokenization, syntax analysis, string handling |
+| **Executor Implementation** | 5h | 19.2% | Process management, I/O handling, signal handling |
+| **Built-in Commands** | 3h | 11.5% | Command implementations, argument processing |
+| **Shell REPL Loop** | 2h | 7.7% | Main loop, prompt management, user interaction |
+| **Unit Testing** | 4h | 15.4% | Test cases for all components, edge cases |
+| **Documentation & Cleanup** | 2h | 7.7% | README, comments, code organization |
+| **Build System (CMake)** | 1h | 3.8% | CMakeLists.txt, Catch2 integration |
+| **Debugging & Optimization** | 2h | 7.7% | Bug fixes, performance improvements |
+| **TOTAL** | **26h** | **100%** | |
 
 ### Effort Notes
 
